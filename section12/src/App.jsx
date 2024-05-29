@@ -82,7 +82,7 @@ function App() {
   return (
     <>
       <DiaryStateContext.Provider value={data}>
-        <DiaryDispatchContext.Provider value={(onCreate, onDelete, onUpdate)}>
+        <DiaryDispatchContext.Provider value={{ onCreate, onDelete, onUpdate }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/diary/:id" element={<Diary />} />{" "}
